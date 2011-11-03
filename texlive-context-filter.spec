@@ -1,3 +1,9 @@
+# revision 24389
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-filter
+# catalog-date 2011-10-24 18:25:01 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-context-filter
 Version:	20111024
 Release:	1
@@ -48,6 +54,7 @@ both MkII and MkIV.
 %{_texmfdistdir}/tex/context/third/filter/t-filter.tex
 %{_texmfdistdir}/tex/context/third/filter/t-module-catcodes.tex
 %doc %{_texmfdistdir}/doc/context/third/filter/filter.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ both MkII and MkIV.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
