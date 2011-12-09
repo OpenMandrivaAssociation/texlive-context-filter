@@ -1,11 +1,11 @@
-# revision 24389
+# revision 24772
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-filter
-# catalog-date 2011-10-24 18:25:01 +0200
+# catalog-date 2011-12-05 08:15:37 +0100
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-context-filter
-Version:	20111024
+Version:	20111205
 Release:	1
 Summary:	Run external programs on the contents of a start-stop environment
 Group:		Publishing
@@ -18,7 +18,6 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires(post):	texlive-context
-Conflicts:	texlive-texmf <= 20110705-3
 
 %description
 The filter module provides a simple interface to run external
@@ -30,23 +29,19 @@ temporary files that are created. The module is compatible with
 both MkII and MkIV.
 
 %pre
-    %_texmf_mtxrun_pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
-    %_texmf_mtxrun_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_pre
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
-	%_texmf_mtxrun_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
