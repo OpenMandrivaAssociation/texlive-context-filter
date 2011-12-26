@@ -1,4 +1,4 @@
-# revision 24772
+# revision 24865
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-filter
 # catalog-date 2011-12-05 08:15:37 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-filter
 Version:	20111205
-Release:	1
+Release:	2
 Summary:	Run external programs on the contents of a start-stop environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-filter
@@ -46,7 +46,8 @@ both MkII and MkIV.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/context/third/filter/t-filter.tex
+%{_texmfdistdir}/tex/context/third/filter/t-filter.mkii
+%{_texmfdistdir}/tex/context/third/filter/t-filter.mkiv
 %{_texmfdistdir}/tex/context/third/filter/t-module-catcodes.tex
 %doc %{_texmfdistdir}/doc/context/third/filter/filter.txt
 %doc %{_tlpkgobjdir}/*.tlpobj
