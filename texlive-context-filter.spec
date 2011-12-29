@@ -28,16 +28,8 @@ output should be read back, and to choose the name of the
 temporary files that are created. The module is compatible with
 both MkII and MkIV.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -50,7 +42,6 @@ both MkII and MkIV.
 %{_texmfdistdir}/tex/context/third/filter/t-filter.mkiv
 %{_texmfdistdir}/tex/context/third/filter/t-module-catcodes.tex
 %doc %{_texmfdistdir}/doc/context/third/filter/filter.txt
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,5 +52,3 @@ both MkII and MkIV.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
