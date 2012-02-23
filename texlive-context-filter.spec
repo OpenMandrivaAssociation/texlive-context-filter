@@ -1,11 +1,11 @@
-# revision 25229
+# revision 25381
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-filter
-# catalog-date 2012-01-28 09:14:25 +0100
+# catalog-date 2012-02-12 10:33:54 +0100
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-context-filter
-Version:	20120128
+Version:	20120212
 Release:	1
 Summary:	Run external programs on the contents of a start-stop environment
 Group:		Publishing
