@@ -1,11 +1,11 @@
-# revision 26248
+# revision 29983
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-filter
-# catalog-date 2012-04-22 10:53:46 +0200
+# catalog-date 2013-04-16 16:51:49 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-context-filter
-Version:	20120422
+Version:	20130416
 Release:	1
 Summary:	Run external programs on the contents of a start-stop environment
 Group:		Publishing
@@ -52,45 +52,3 @@ both MkII and MkIV.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120422-1
-+ Revision: 804539
-- Update to latest release.
-
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120319-1
-+ Revision: 787576
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120212-1
-+ Revision: 779424
-- Update to latest release.
-
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120128-1
-+ Revision: 770136
-- Update to latest upstream package
-
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111228-1
-+ Revision: 762565
-- Update to latest upstream package
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111205-3
-+ Revision: 750493
-- Rebuild to reduce used resources
-
-* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111205-2
-+ Revision: 745169
-- texlive-context-filter
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111205-1
-+ Revision: 739711
-- texlive-context-filter
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111024-1
-+ Revision: 718128
-- texlive-context-filter
-- texlive-context-filter
-- texlive-context-filter
-- texlive-context-filter
-
