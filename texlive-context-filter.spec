@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-filter
 Version:	20120422
-Release:	1
+Release:	2
 Summary:	Run external programs on the contents of a start-stop environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-filter
