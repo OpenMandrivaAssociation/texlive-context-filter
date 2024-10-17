@@ -3,7 +3,7 @@ Version:	62070
 Release:	2
 Summary:	Run external programs on the contents of a start-stop environment
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-filter
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-filter
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-filter.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-filter.doc.r%{version}.tar.xz
