@@ -12,8 +12,6 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/context-filter.r
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/context-filter.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-BuildRequires:	texlive-tlpkg
-%texlive_base_requires
 Requires:	texlive(context)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
 
